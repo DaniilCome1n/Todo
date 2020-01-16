@@ -1,0 +1,88 @@
+@import 'reset';
+
+body{
+    background-color: #252627;
+    font-family:Montserrat ;
+
+    input{
+        outline: none;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+
+        .mainCont{
+            display: flex;
+            flex-direction: row;
+            margin-left: 30%;
+            padding-top: 100px;
+
+            .mainInput{
+                border: none;
+                width: 250px;
+                height: 42px;
+                font-size: 30px;   
+                padding: 10px 0 0 10px; 
+                border-radius: 5px;
+                box-shadow: 3px 3px 3px grey;
+                color:#082655 ;
+            }
+
+            .mainInput:focus{
+                background-color:#cedef7 ;
+            }
+
+            .button{
+                margin-left: 15px;
+                border: none;
+                width: 100px;
+                height: 52px;
+                border-radius: 5px;
+                box-shadow: 3px 3px 3px grey; 
+                background-color: #8be67f;
+                color:#1b5714 ;
+                font-weight: 600;   
+                transition: 0.3s;
+            }
+            
+            .button:hover{
+                background-color: #56a54b;
+            }
+
+            .button:active{
+                color: #8be67f;
+            }
+        }
+        
+        .taskContainer{
+            display: flex;
+            flex-direction: column;
+            margin-left: 30%;
+        
+            .task{
+                width: 365px;
+                height: 50px;
+                font-size: 30px;
+                background-color: #3385ff;
+                margin-top: 10px;
+                padding: 10px 0 0 10px;
+                border-radius: 5px;
+                box-shadow: 3px 3px 3px grey;
+                color:#cedef7 ;
+                transition: 0.3s;
+            }
+
+            .task:hover{
+                background-color: #195dc4;
+            }
+
+            .task:active{
+                background-color: #e45a5a;
+            }
+
+            
+        }
+    }
+}
+
