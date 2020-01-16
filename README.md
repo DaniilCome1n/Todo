@@ -11,17 +11,17 @@
 
     1. Клонируйте репозиторий
 
-    > git clone
+        > git clone
 
     2. Скачайте использованные в проекте пакеты
 
-    > npm install
+        > npm install
 
     3. Запустите транспилляцию 
 
-    > npm run watch
+        > npm run watch
 
 ---
 
 ## Для просмотра результата откройте:
-    > /app/index.html
+        > /app/index.html
