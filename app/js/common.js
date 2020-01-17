@@ -14,8 +14,8 @@ targetButton.addEventListener("click",addTask);
 
 
 const taskContainer = document.querySelector('.taskContainer');
-taskContainer.onclick = function(event){
-    event.target.remove();
+taskContainer.onclick =(e)=>{
+    e.target.remove();
 }
 
 
