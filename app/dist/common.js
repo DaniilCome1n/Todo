@@ -1,12 +1,16 @@
 'use strict';
 
+function createElem(elem, container) {
+    container.prepend(elem);
+}
+
 function addTask() {
     var taskContainer = document.querySelector('.taskContainer');
     var newElem = document.createElement('div');
     newElem.className = "task";
     var mainInput = document.querySelector('.mainInput');
     newElem.innerHTML = mainInput.value;
-    taskContainer.prepend(newElem);
+    createElem(newElem, taskContainer);
     mainInput.value = "";
 }
 
