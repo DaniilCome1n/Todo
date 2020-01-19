@@ -15,7 +15,7 @@ function addListToLocal() {
 
 function addTask() {
     var mainInput = document.querySelector('.mainInput');
-    var newElem = document.createElement('div');
+    var newElem = document.createElement('li');
     newElem.className = "task";
     newElem.innerHTML = mainInput.value;
     if (mainInput.value == "") {
