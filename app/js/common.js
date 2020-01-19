@@ -16,7 +16,11 @@ function addTask(){
     let newElem = document.createElement('div');
     newElem.className = "task";
     newElem.innerHTML = mainInput.value;
-    createElem(newElem,taskContainer);
+        if(mainInput.value == ""){
+            console.log("Enter task");
+        }else{
+            createElem(newElem,taskContainer);
+        }
     mainInput.value = "";
     addListToLocal();
 }
