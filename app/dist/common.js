@@ -15,10 +15,14 @@ function addListToLocal() {
 
 function addTask() {
     var mainInput = document.querySelector('.mainInput');
-    var newElem = document.createElement('div');
+    var newElem = document.createElement('li');
     newElem.className = "task";
     newElem.innerHTML = mainInput.value;
-    createElem(newElem, taskContainer);
+    if (mainInput.value == "") {
+        console.log("Enter task");
+    } else {
+        createElem(newElem, taskContainer);
+    }
     mainInput.value = "";
     addListToLocal();
 }

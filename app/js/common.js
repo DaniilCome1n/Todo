@@ -13,10 +13,14 @@ function addListToLocal(){
 
 function addTask(){
     let mainInput = document.querySelector('.mainInput');
-    let newElem = document.createElement('div');
+    let newElem = document.createElement('li');
     newElem.className = "task";
     newElem.innerHTML = mainInput.value;
-    createElem(newElem,taskContainer);
+        if(mainInput.value == ""){
+            console.log("Enter task");
+        }else{
+            createElem(newElem,taskContainer);
+        }
     mainInput.value = "";
     addListToLocal();
 }
